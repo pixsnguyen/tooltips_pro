@@ -6,28 +6,81 @@
     <title>Tooltips pro</title>
     <style>
         .icon{
-            margin: 200px auto;
+            margin: 50px auto;
             text-align:center;
         }
+        .text-info{
+          color: #2cabe3;
+        }
+        a{
+          text-decoration: none;
+        }
+        #example{
+          width: 100%;
+          border:1px solid #aaa;
+        }
     </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="icon">
-        <a href="/url/1603" data-tooltips-title="Add" target="_blank" class="tooltips_pro">
+      <h1 class="text-danger">Tooltips Pro</h1>
+      <p class="text-muted"><small>Created by Pixs Nguyen</small></p>
+        <a href="/url/1603" data-tooltips-title="Add" target="_blank" class="tooltips_pro text-info">
           <i class="fa fa-plus-circle" aria-hidden="true"></i> Add
         </a>  
-          <a href="/url/1603" data-tooltips-title="Edit" target="_blank" class="tooltips_pro">
+          <a href="/url/1603" data-tooltips-title="Edit" target="_blank" class="tooltips_pro text-info">
           <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
         </a>  
-          <a href="/url/1603" data-tooltips-title="Delete" target="_blank" class="tooltips_pro">
+          <a href="/url/1603" data-tooltips-title="Delete" target="_blank" class="tooltips_pro text-info">
           <i class="fa fa-trash" aria-hidden="true"></i> Delete
         </a>  
-          <a href="/url/1603" data-tooltips-title="View" target="_blank" class="tooltips_pro">
+          <a href="/url/1603" data-tooltips-title="View" target="_blank" class="tooltips_pro text-info">
           <i class="fa fa-eye" aria-hidden="true"></i> View
         </a>  
+        <div class="table-View  col-sm-6 mx-auto mt-5">
+          <table  id="example" class="table col-sm-12">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Username</th>
+                <th>Display Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>user1</td>
+                <td>JaySon</td>
+                <td>
+                  <a href="/url/1603" data-tooltips-title="Add" target="_blank" class="tooltips_pro text-info">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </a>  
+                    <a href="/url/1603" data-tooltips-title="Edit" target="_blank" class="tooltips_pro text-info">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  </a>  
+                    <a href="/url/1603" data-tooltips-title="Delete" target="_blank" class="tooltips_pro text-info">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>  
+                    <a href="/url/1603" data-tooltips-title="View" target="_blank" class="tooltips_pro text-info">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </a>  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
     <script src="js/handle.js"></script>
+    <script>
+      $('#example').DataTable();
+    </script>
 </body>
 </html>
