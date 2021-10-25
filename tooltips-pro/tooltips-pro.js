@@ -1,5 +1,5 @@
-$(".tooltips_pro").on('mouseenter',function(){
-	$('.tooltips_pro span').remove();
+$(".tooltips-pro").on('mouseenter',function(){
+	$('.tooltips-pro span').remove();
 	let tooltips_title = $(this).attr('data-tooltips-title');
   let last_content_tooltips =`
     <span class="tooltip-pro-content">
@@ -11,8 +11,8 @@ $(".tooltips_pro").on('mouseenter',function(){
 	$(this).append(last_content_tooltips);
 })
 
-$(".datatable").on('mouseenter','tbody tr td .tooltips_pro',function(){
-	$('.datatable  tr td .tooltips_pro span').remove();
+$(".datatable").on('mouseenter','tbody tr td .tooltips-pro',function(){
+	$('.datatable  tr td .tooltips-pro span').remove();
 	let tooltips_title = $(this).attr('data-tooltips-title');
 	let last_content_tooltips =`
     <span class="tooltip-pro-content">

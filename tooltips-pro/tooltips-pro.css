@@ -1,5 +1,5 @@
 /**tooltips*/
-.tooltips_pro {
+.tooltips-pro {
     display: inline;
     position: relative;
     z-index: 4;
@@ -7,13 +7,13 @@
     margin: 0 2px;
     padding-left: 2px;
 }
-.tooltips_pro:hover .tooltip-pro-content {
+.tooltips-pro:hover .tooltip-pro-content {
     opacity: 1;
     pointer-events: auto;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
-.tooltips_pro .tooltip-pro-content {
+.tooltips-pro .tooltip-pro-content {
     position: absolute;
     z-index: 9999;
     width: 100px;
@@ -33,16 +33,16 @@
     -webkit-transition: opacity .3s .3s;
     transition: opacity .3s .3s;
 } 
-.tooltips_pro:hover .tooltip-pro-text {
+.tooltips-pro:hover .tooltip-pro-text {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
 }
-.tooltips_pro .tooltip-pro-content span {
+.tooltips-pro .tooltip-pro-content span {
     display: block;
 }
-.tooltips_pro .tooltip-pro-text {
+.tooltips-pro .tooltip-pro-text {
     border-bottom: 5px solid #fb9678;
     overflow: hidden;
     -webkit-transform: scale3d(0,1,1);
@@ -51,16 +51,16 @@
     transition: transform .3s .3s;
 }
 
-.tooltips_pro:hover .tooltip-pro-inner {
+.tooltips-pro:hover .tooltip-pro-inner {
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.tooltips_pro .tooltip-pro-content span {
+.tooltips-pro .tooltip-pro-content span {
     display: block;
 }
-.tooltips_pro .tooltip-pro-inner {
+.tooltips-pro .tooltip-pro-inner {
     background: #2b2b2b;
     padding: 15px;
     -webkit-transform: translate3d(0,100%,0);
@@ -68,7 +68,7 @@
     webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
 }
-.tooltips_pro .tooltip-pro-content::after {
+.tooltips-pro .tooltip-pro-content::after {
     content: '';
     bottom: -20px;
     left: 50%;
